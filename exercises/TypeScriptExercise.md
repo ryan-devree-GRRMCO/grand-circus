@@ -15,5 +15,5 @@ Define an interface called IStudent that has the following properties:
 ### StudentApp.ts
 Write a class called StudentApp that has the following properties and methods:
 - students -- array of IStudent
-- getStudentByName -- take in a string firstName and string lastName, and returns an IStudent that matches both firstName and lastName.
+- getStudentByName -- take in a string firstName and string lastName, and returns an IStudent that matches both firstName and lastName. If none match, will return undefined.
 - sortStudents -- take in boolean sortByLastName that determines whether the function will sort the array by first name or last name. This will then return an array of IStudent that is sorted.
