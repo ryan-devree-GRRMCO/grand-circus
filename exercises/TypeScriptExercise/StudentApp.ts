@@ -31,5 +31,7 @@ class StudentApp {
 
 const studentApp = new StudentApp();
 console.log(studentApp.getStudentByName('BJ', 'Clark'));
+console.log(studentApp.getStudentByName('Tommy', 'Walkes'));
+
 console.log(studentApp.sortStudents(true));
 console.log(studentApp.sortStudents(false));
