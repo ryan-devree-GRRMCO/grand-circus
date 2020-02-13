@@ -9,7 +9,6 @@ class StudentApp {
         {firstName: 'Tommy', lastName: 'Waalkes', isFrontEnd: false},
         {firstName: 'Chris', lastName: 'Watts', isFrontEnd: true},
         {firstName: 'Roger', lastName: 'Winright', isFrontEnd: true},
-
     ];
     
     getStudentByName(firstName: string, lastName: string) : IStudent|undefined {
