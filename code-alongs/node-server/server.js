@@ -28,9 +28,12 @@ http.createServer((req,res) =>{
                 text-align: center;
             }
         </style>
-        <h1> Random Facts </h1>
-        <h2> My Random Fact:  </h2>
+        <body>
+            <h1> Random Facts </h1>
+            <h2> My Random Fact:  </h2>
+        </body>
         <p><em>${fact}</em></p>
+        </html>
     `);
     res.end();
 }).listen(8888);
