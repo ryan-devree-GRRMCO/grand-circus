@@ -19,7 +19,7 @@ app.listen(port, () => {
 })
 
 // Allow us to access the API from different domains
-// app.use(cors());
+ app.use(cors());
 
 // use facts api module for handling facts
 app.use("/facts", factsAPI);
