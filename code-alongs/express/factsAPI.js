@@ -28,20 +28,11 @@ factsEndpoint.get( '/', (req, res) => {
 
 // add random fact
 factsEndpoint.post( '/', (req, res) => {
-    const body = req.body;
+    const body = req.body.fact;
 
-    const ID = new Date().getTime();
+    factsArray.push(body);
 
-    const newItem = {
-        id: ID,
-        product: body.product,
-        price: body.price,
-        quantity: body.quantity
-    }
-
-    factsArray.push(newItem);
-
-    res.json(newItem);
+    res.json(factsArray);
 });
 
 // update random fact by index
